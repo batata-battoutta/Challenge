@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    /* Ensure relative positioning for the background image */
+    width: 100vw;
+    height: 120vh;
+    /* Set the desired height for the container */
+    overflow: hidden;
+    /* Ensure that the background image doesn't overflow the container */
+}
+
+.background-image {
+    position: absolute;
+    /* Position the background image absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-image: url('../assets/1.png');
+    /* Replace 'path/to/your/image.jpg' with the actual image path */
+    background-size: cover;
+    /* Make the background image cover the entire container */
+    background-position: center;
+    /* Center the background image within the container */
+    z-index: -1;
+    /* Place the background image behind other content */
+}
